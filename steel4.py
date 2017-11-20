@@ -16,7 +16,7 @@ def steel4(PROD, STAGE, rate, profit, commit, market, avail):
     solve()
 
 
-if __name__ == "__main__":
+def main():
     PROD_set = ['band', 'coils', 'plate']
     PROD = range(len(PROD_set))
 
@@ -44,3 +44,7 @@ if __name__ == "__main__":
 
     steel4(PROD, STAGE, rate, profit, commit, market, avail)
     assert (round(vobj() * 10000) == 1900714286)
+
+
+if __name__ == "__main__":
+    main()

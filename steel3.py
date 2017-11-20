@@ -15,7 +15,7 @@ def steel3(PROD, rate, profit, commit, market, avail):
     solve()
 
 
-if __name__ == "__main__":
+def main():
     PROD_set = ['band', 'coils', 'plate']
     PROD = range(len(PROD_set))
 
@@ -35,3 +35,7 @@ if __name__ == "__main__":
 
     steel3(PROD, rate, profit, commit, market, avail)
     assert (round(vobj() * 10000) == 1948285714)
+
+
+if __name__ == "__main__":
+    main()

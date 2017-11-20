@@ -1,7 +1,7 @@
 from pymprog import *
 
 
-def prod(P, a_data, b, c, u):
+def prod(P, a, b, c, u):
     begin('prod')
 
     X = var('X', P)
@@ -16,7 +16,7 @@ def prod(P, a_data, b, c, u):
     solve()
 
 
-if __name__ == "__main__":
+def main():
     P_set = ['band', 'coils']
     P = range(len(P_set))
 
@@ -34,3 +34,7 @@ if __name__ == "__main__":
 
     prod(P, a, b, c, u)
     assert (vobj() == 192000)
+
+
+if __name__ == "__main__":
+    main()

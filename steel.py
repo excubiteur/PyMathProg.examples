@@ -15,7 +15,7 @@ def steel(PROD, rate, profit, market, avail):
     solve()
 
 
-if __name__ == "__main__":
+def main():
     PROD_set = ['band', 'coils']
     PROD = range(len(PROD_set))
 
@@ -33,3 +33,7 @@ if __name__ == "__main__":
 
     steel(PROD, rate, profit, market, avail)
     assert (vobj() == 192000)
+
+
+if __name__ == "__main__":
+    main()
