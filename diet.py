@@ -2,7 +2,7 @@ from pymprog import *
 
 
 def diet(FOOD, NUTR, cost, f_min, f_max, n_min, n_max, amt):
-    begin('prod')
+    begin('diet')
 
     Buy = var('Buy', FOOD)
     for j in FOOD:
