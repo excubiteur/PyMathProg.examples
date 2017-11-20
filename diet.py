@@ -1,7 +1,7 @@
 from pymprog import *
 
 
-def prod(FOOD, NUTR, cost, f_min, f_max, n_min, n_max, amt):
+def diet(FOOD, NUTR, cost, f_min, f_max, n_min, n_max, amt):
     begin('prod')
 
     Buy = var('Buy', FOOD)
@@ -65,7 +65,7 @@ def main():
 
     amt = [list(x) for x in zip(*transposed_params3)]
 
-    prod(FOOD, NUTR, cost, f_min, f_max, n_min, n_max, amt)
+    diet(FOOD, NUTR, cost, f_min, f_max, n_min, n_max, amt)
     assert (vobj() * 10 == 882)
 
 
