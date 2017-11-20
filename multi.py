@@ -67,7 +67,7 @@ def main():
         [29, 9, 13, 9, 28, 99, 18],
         [26, 14, 17, 13, 31, 104, 20]]
 
-    cost = [[[bands[i][j], coils[i][j], plate[i][j]] for j in range(7)] for i in range(3)]
+    cost = [[[bands[i][j], coils[i][j], plate[i][j]] for j in DEST] for i in ORIG]
 
     limit = 625
 
