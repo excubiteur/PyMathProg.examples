@@ -35,6 +35,5 @@ def main():
     prod(P, a, b, c, u)
     assert (vobj() == 192000)
 
-
 if __name__ == "__main__":
     main()
